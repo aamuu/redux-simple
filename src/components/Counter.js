@@ -15,7 +15,7 @@ class Counter extends React.Component {
         const {count} = this.props.count;
         return (
             <div>
-                <h1>Counter</h1>
+                <h2>This is very simple example of how redux flow works</h2>
                 <div>
                     <button onClick={this.remove}>-</button>
                     <h2>{count}</h2>
