@@ -1,6 +1,7 @@
 import {
     INCREMENT,
-    DECREMENT
+    DECREMENT,
+    CLEAR
 } from "../actions/types";
 
 const initialState = {
@@ -19,6 +20,10 @@ export default function (state = initialState, action) {
                     count: state.count - 1
                 };
             } else return state;
+        case CLEAR:
+            return {
+                count: 0
+            };
         default:
             return state;
     }
